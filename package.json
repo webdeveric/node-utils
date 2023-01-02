@@ -1,0 +1,88 @@
+{
+  "name": "@webdeveric/node-utils",
+  "description": "Just another collection of utilities for Node JS.",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "utils",
+    "utilities"
+  ],
+  "author": {
+    "email": "eric@webdeveric.com",
+    "name": "Eric King",
+    "url": "http://webdeveric.com/"
+  },
+  "type": "commonjs",
+  "sideEffects": false,
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/types/index.d.ts",
+  "packageManager": "pnpm@7.21.0",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/mjs/index.js"
+    },
+    "./*": {
+      "types": "./dist/types/*.d.ts",
+      "require": "./dist/cjs/*.js",
+      "import": "./dist/mjs/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webdeveric/node-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webdeveric/node-utils/issues"
+  },
+  "homepage": "https://github.com/webdeveric/node-utils/#readme",
+  "scripts": {
+    "clean": "rimraf ./dist/",
+    "prebuild": "pnpm clean",
+    "build:cjs": "tsc -p ./tsconfig.cjs.json",
+    "build:mjs": "tsc -p ./tsconfig.mjs.json",
+    "postbuild:cjs": "echo '{\"type\":\"commonjs\"}' > ./dist/cjs/package.json",
+    "postbuild:mjs": "echo '{\"type\":\"module\"}' > ./dist/mjs/package.json",
+    "build": "pnpm build:cjs && pnpm build:mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ./*.{js,cjs,mjs,ts,cts,mts} ./src/ --ext .ts",
+    "test": "vitest",
+    "coverage": "vitest run  -c vitest.config.mts --coverage",
+    "spellcheck": "cspell './{.github,src,test}/**/*.{ts,json}' './*.{md,js}' './package.json' --no-progress",
+    "prepublishOnly": "pnpm typecheck && pnpm spellcheck && pnpm lint && pnpm coverage && pnpm build",
+    "format": "prettier --write ./*.{js,json,md} ./src/",
+    "preinstall": "npx --yes check-package-manager --info",
+    "prepare": "husky install"
+  },
+  "prettier": "@webdeveric/prettier-config",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@vitest/coverage-c8": "^0.26.3",
+    "@webdeveric/eslint-config-ts": "^0.6.0",
+    "@webdeveric/prettier-config": "^0.2.0",
+    "check-package-manager": "^0.3.0",
+    "cspell": "^6.18.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4",
+    "vitest": "^0.26.3"
+  }
+}

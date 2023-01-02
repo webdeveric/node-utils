@@ -1,0 +1,36 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "Autobuild",
+    "clonedeep",
+    "codeql",
+    "corejs",
+    "escaperegexp",
+    "fcrdns",
+    "hostnames",
+    "keyof",
+    "Newable",
+    "npmrc",
+    "nvmrc",
+    "pnpm",
+    "postbuild",
+    "prebuild",
+    "preinstall",
+    "Testerson",
+    "tslib",
+    "twasn't",
+    "typecheck",
+    "vitest",
+    "webcompat",
+    "webdeveric"
+  ],
+  "flagWords": [],
+  "ignorePaths": ["pnpm-lock.yaml", "node_modules", ".vscode"],
+  "languageSettings": [
+    {
+      "languageId": "commit-msg",
+      "ignoreRegExpList": ["/^#.*/gm"]
+    }
+  ]
+}
