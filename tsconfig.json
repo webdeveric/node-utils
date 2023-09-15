@@ -20,7 +20,7 @@
     "forceConsistentCasingInFileNames": true,
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
-    "importsNotUsedAsValues": "error",
+    "verbatimModuleSyntax": true,
     "noErrorTruncation": true,
     "exactOptionalPropertyTypes": true
   },
