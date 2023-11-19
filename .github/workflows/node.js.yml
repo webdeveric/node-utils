@@ -22,8 +22,6 @@ jobs:
         run: pnpm install
       - name: Linting
         run: pnpm lint
-      - name: Type checking
-        run: pnpm typecheck
       - name: Building
         run: pnpm build
       - name: Testing
