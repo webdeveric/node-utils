@@ -5,6 +5,6 @@
     "noEmit": true,
     "allowJs": true
   },
-  "include": ["./*.js", "./*.mjs", "./*.mts", "./bin/*.cjs", "./bin/*.mjs"],
+  "include": ["./*.js", "./*.mjs", "./*.mts", "./bin/*.cjs", "./bin/*.cjs", "./bin/*.mjs"],
   "exclude": ["node_modules", "private"]
 }
