@@ -4,7 +4,7 @@ import { fcrdns } from './fcrdns';
 
 vi.mock('node:dns/promises', () => {
   return {
-    reverse: vi.fn(() => ['example.com']).mockImplementationOnce(() => Promise.resolve([])),
+    reverse: vi.fn(async () => ['example.com']).mockImplementationOnce(async () => []),
     resolve4() {
       return Promise.resolve(['0.0.0.1']);
     },
