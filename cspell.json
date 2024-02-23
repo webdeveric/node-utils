@@ -17,6 +17,7 @@
     "postbuild",
     "prebuild",
     "preinstall",
+    "Subresource",
     "Testerson",
     "tslib",
     "twasn't",
