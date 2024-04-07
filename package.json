@@ -59,7 +59,7 @@
     "postbuild": "pnpm validate",
     "validate": "validate-package-exports --check --verify",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint ./*.{js,cjs,mjs,ts,cts,mts} ./bin/*.{cjs,mjs} ./src/ --ext .ts",
+    "lint": "eslint ./*.{js,cjs,mjs,ts,cts,mts} ./src/ --ext .ts",
     "test": "vitest",
     "coverage": "vitest run  -c vitest.config.mts --coverage",
     "spellcheck": "cspell './{.github,src,test}/**/*.{ts,json}' './*.{md,js}' './package.json' --no-progress",
