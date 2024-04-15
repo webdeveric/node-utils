@@ -20,7 +20,7 @@
   "sideEffects": false,
   "main": "./dist/cjs/index.js",
   "types": "./dist/types/index.d.ts",
-  "packageManager": "pnpm@8.15.3+sha256.fc4a49bd609550a41e14d20efbce802a4b892aa4cac877322de2f0924f122991",
+  "packageManager": "pnpm@8.15.7+sha256.50783dd0fa303852de2dd1557cd4b9f07cb5b018154a6e76d0f40635d6cee019",
   "engines": {
     "node": ">=18.0.0"
   },
@@ -69,11 +69,11 @@
   },
   "prettier": "@webdeveric/prettier-config",
   "devDependencies": {
-    "@types/node": "^20.12.5",
-    "@vitest/coverage-v8": "^1.4.0",
+    "@types/node": "^20.12.7",
+    "@vitest/coverage-v8": "^1.5.0",
     "@webdeveric/eslint-config-ts": "^0.7.1",
     "@webdeveric/prettier-config": "^0.2.0",
-    "cspell": "^8.6.1",
+    "cspell": "^8.7.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
@@ -83,8 +83,8 @@
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
-    "typescript": "^5.4.4",
-    "validate-package-exports": "^0.3.0",
-    "vitest": "^1.4.0"
+    "typescript": "^5.4.5",
+    "validate-package-exports": "^0.4.0",
+    "vitest": "^1.5.0"
   }
 }
