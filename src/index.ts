@@ -1,3 +1,4 @@
+export * from './deprecateProperty.js';
 export * from './fcrdns.js';
 export * from './getSRIHash.js';
 export * from './hash.js';
