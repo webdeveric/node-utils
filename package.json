@@ -20,7 +20,7 @@
   "sideEffects": false,
   "main": "./dist/cjs/index.js",
   "types": "./dist/types/index.d.ts",
-  "packageManager": "pnpm@9.1.1+sha256.9551e803dcb7a1839fdf5416153a844060c7bce013218ce823410532504ac10b",
+  "packageManager": "pnpm@9.8.0+sha512.8e4c3550fb500e808dbc30bb0ce4dd1eb614e30b1c55245f211591ec2cdf9c611cabd34e1364b42f564bd54b3945ed0f49d61d1bbf2ec9bd74b866fcdc723276",
   "engines": {
     "node": ">=18.0.0"
   },
@@ -69,22 +69,22 @@
   },
   "prettier": "@webdeveric/prettier-config",
   "devDependencies": {
-    "@types/node": "^20.12.11",
-    "@vitest/coverage-v8": "^1.6.0",
-    "@webdeveric/eslint-config-ts": "^0.7.3",
-    "@webdeveric/prettier-config": "^0.2.0",
-    "cspell": "^8.8.1",
+    "@types/node": "^20.16.1",
+    "@vitest/coverage-v8": "^2.0.5",
+    "@webdeveric/eslint-config-ts": "^0.11.0",
+    "@webdeveric/prettier-config": "^0.3.0",
+    "cspell": "^8.14.2",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
-    "glob": "^10.3.15",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5",
-    "rimraf": "^5.0.7",
-    "typescript": "^5.4.5",
-    "validate-package-exports": "^0.5.0",
-    "vitest": "^1.6.0"
+    "glob": "^10.4.5",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4",
+    "validate-package-exports": "^0.6.1",
+    "vitest": "^2.0.5"
   }
 }
